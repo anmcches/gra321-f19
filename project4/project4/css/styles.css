@@ -16,3 +16,7 @@ h1 {
 img {
     max-width: 100%;
 }
+
+ul {
+    margin-bottom: 2rem;
+}
