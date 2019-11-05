@@ -1,0 +1,172 @@
+/* Project 6 Styles */
+
+body {
+    background-color: #edd5ba;
+    text-transform: uppercase;
+}
+
+/* This is Kyle's CSS for Menu Grid */
+
+li {
+    display: grid;
+    grid-gap: .25em;
+    grid-template-areas: 
+    "product product product product"
+    "s m l .";
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 0em;
+    margin-left: 50px;
+    width: 100%;
+}
+
+@media screen and (min-width: 680px) {
+  li {
+    grid-template-areas:
+      "product s m l";
+  }
+}
+
+.product {
+    grid-area: product;
+}
+
+.small {
+    grid-area: s;
+}
+
+.medium {
+    grid-area: m;
+}
+
+.large {
+    grid-area: l;
+}
+
+ul {
+  width: 100%;
+}
+
+/* This is the end of Kyle's CSS for Menu Grid */
+
+/* This is slider CSS */
+
+.slide-container {
+    width: 1100px;
+    height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container {
+    width: 7700px;
+    height: 735px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container {
+    top:-125px;
+    position: relative;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    margin: 20px;
+    background-color: white;
+}
+
+#slider-image-1:target ~ .image-container {
+    left:0px;
+}
+
+#slider-image-2:target ~ .image-container {
+    left:-1100px;
+}
+
+#slider-image-3:target ~ .image-container {
+    left:-2200px;
+}
+
+#slider-image-4:target ~ .image-container {
+    left:-3300px;
+}
+
+#slider-image-5:target ~ .image-container {
+    left:-4400px;
+}
+
+#slider-image-6:target ~ .image-container {
+    left:-5500px;
+}
+
+#slider-image-7:target ~ .image-container {
+    left:-6600px;
+}
+
+/* This is end of slider CSS */
+
+.menu {
+    text-transform: uppercase;
+}
+
+li {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    font-size: 45px;
+}
+
+h1 {
+    font-family: mr-eaves-modern, sans-serif;
+    letter-spacing: .25em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    margin: 20px;
+}
+
+.topinfo {
+    text-align: center;
+    font-size: 20px;
+}
+
+h3{ 
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+
+h6 {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+
+p {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+}
